@@ -11,6 +11,9 @@ var companies = []string{"AAA", "BBB", "CCC"}
 func main() {
 	fmt.Printf("=== Test ===\n\n")
 
+	fmt.Printf("Spaceline        Days Trip type  Price\n")
+	fmt.Println("======================================")
+
 	rand.Seed(time.Now().UnixNano())
 
 	for i := 0; i < 10; i++ {
