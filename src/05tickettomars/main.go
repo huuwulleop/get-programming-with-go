@@ -20,9 +20,6 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	for i := 0; i < 10; i++ {
-		// num := rand.Intn(80)
-		// fmt.Println("test:", num)
-
 		comp_index := rand.Intn(3)
 		comp := companies[comp_index]
 
@@ -33,7 +30,12 @@ func main() {
 		trip_index := rand.Intn(2)
 		trip := tripType[trip_index]
 
-		fmt.Printf("%-16s %4v %s \n", comp, days, trip)
+		price := speed + 20
+		if trip_index == 1 {
+			price *= 2
+		}
+
+		fmt.Printf("%-16s %4v %-10s $%4v \n", comp, days, trip, price)
 	}
 
 	fmt.Println()
