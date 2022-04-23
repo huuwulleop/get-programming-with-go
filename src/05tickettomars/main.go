@@ -18,15 +18,22 @@ func main() {
 
 	for i := 0; i < 10; i++ {
 		num := rand.Intn(80)
-		fmt.Println(num)
+		fmt.Println("test:", num)
 	}
 
 	fmt.Println()
 
-	fmt.Println(len(companies))
+	// fmt.Println(len(companies))
 
 	for i := 0; i < 10; i++ {
 		ind := rand.Intn(3)
-		fmt.Println(companies[ind])
+		fmt.Println("comp:", companies[ind])
+	}
+
+	fmt.Println()
+
+	for i := 0; i < 10; i++ {
+		speed := rand.Intn(15) + 16
+		fmt.Println("speed:", speed)
 	}
 }
