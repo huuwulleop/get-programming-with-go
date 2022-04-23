@@ -6,7 +6,10 @@ import (
 	"time"
 )
 
-var companies = []string{"AAA", "BBB", "CCC"}
+var companies = []string{"SpaceX", "Space Adventures", "Virgin Galactic"}
+var tripType = []string{"One-way", "Round-trip"}
+
+const distance = 62100000
 
 func main() {
 	fmt.Printf("=== Test ===\n\n")
