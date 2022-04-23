@@ -30,7 +30,10 @@ func main() {
 		time_travel := distance / speed
 		days := time_travel / (60 * 60 * 24)
 
-		fmt.Printf("%s\t%v \n", comp, days)
+		trip_index := rand.Intn(2)
+		trip := tripType[trip_index]
+
+		fmt.Printf("%-15s %4v %s \n", comp, days, trip)
 	}
 
 	fmt.Println()
