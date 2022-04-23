@@ -12,7 +12,9 @@ var tripType = []string{"One-way", "Round-trip"}
 const distance = 62100000 // km (distance between Earth and Mars)
 
 func main() {
-	fmt.Printf("=== Test ===\n\n")
+	fmt.Printf("=== Ticket Prices from Earth to Mars ===\n")
+	fmt.Printf("(*in millions of dollars)\n")
+	fmt.Printf("(**as of October 13, 2020)\n\n")
 
 	fmt.Printf("Spaceline        Days Trip type  Price\n")
 	fmt.Println("======================================")
