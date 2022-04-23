@@ -9,7 +9,7 @@ import (
 var companies = []string{"SpaceX", "Space Adventures", "Virgin Galactic"}
 var tripType = []string{"One-way", "Round-trip"}
 
-const distance = 62100000
+const distance = 62100000 // km (distance between Earth and Mars)
 
 func main() {
 	fmt.Printf("=== Test ===\n\n")
@@ -20,18 +20,18 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	for i := 0; i < 10; i++ {
-		num := rand.Intn(80)
-		fmt.Println("test:", num)
+		// num := rand.Intn(80)
+		// fmt.Println("test:", num)
+
+		comp_index := rand.Intn(3)
+		comp := companies[comp_index]
+
+		fmt.Printf("%s \n", comp)
 	}
 
 	fmt.Println()
 
 	// fmt.Println(len(companies))
-
-	for i := 0; i < 10; i++ {
-		ind := rand.Intn(3)
-		fmt.Println("comp:", companies[ind])
-	}
 
 	fmt.Println()
 
