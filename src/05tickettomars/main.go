@@ -26,17 +26,12 @@ func main() {
 		comp_index := rand.Intn(3)
 		comp := companies[comp_index]
 
-		fmt.Printf("%s \n", comp)
-	}
-
-	fmt.Println()
-
-	// fmt.Println(len(companies))
-
-	fmt.Println()
-
-	for i := 0; i < 10; i++ {
 		speed := rand.Intn(15) + 16
-		fmt.Println("speed:", speed)
+		time_travel := distance / speed
+		days := time_travel / (60 * 60 * 24)
+
+		fmt.Printf("%s\t%v \n", comp, days)
 	}
+
+	fmt.Println()
 }
